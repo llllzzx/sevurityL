@@ -12,8 +12,10 @@ public class HelloController {
 //    @PreAuthorize("hasAuthority('sys:dept:list')")
     @PreAuthorize("@ex.hasAuthority('sys:dept:list')")
     public String hello(){
+        System.out.println("我来测试");
         return "hello";
     }
-    System.out.println("test");
+//    System.out.println("test");
+
 
 }
